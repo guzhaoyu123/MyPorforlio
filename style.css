@@ -46,10 +46,12 @@ header ul li a {
 
 .welcome-section h1 {
     font-size: 3.3rem;
+    text-align: center;
 }
 
 .welcome-section p {
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 1em;
     font-size: 1.5rem;
     color: #be3144;
 }
@@ -58,44 +60,98 @@ header ul li a {
 .projects {
     min-height: 100%;
     background-color: #45567d;
-}
-
-
-
-.projects .container {
-    width: 70%;
-    min-height: 100%;
-    margin: 0 auto;
-    display: flex;
+    display:flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    
 }
+
+
 .projects-title {
     text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.showcase-container{
+@media screen and (min-device-width:350px){
+    
+    .showcase-container{
+        display: grid;
+        grid-template-columns: 330px  ;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px ;
+        grid-row-gap: 40px;
+        }
+    .contact-span{
+        display: block;
+    }
+}
+@media screen and (min-device-width:800px){
+    .showcase-container{
+        display: grid;
+        grid-template-columns: 330px 330px ;
+        grid-template-rows: 300px 300px 300px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        }
+}
+@media screen and ( min-device-width:1200px){
+    .showcase-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    }
 }
-.projects .showcase{
-    width:90% ;
-    height: 300px;
-}
+
 .projects .showcase .preview{
     text-align: center;
-    height: 270px;
-    background-color: red;
+    height: 90%;
+}
+.projects .showcase .preview img{
+    width: 100%;
+    height: 100%;
 }
 .projects .showcase .title{
     text-align: center;
-    height: 30px;
-    background-color: yellow;
+    height: 10%;
+    line-height: 30px;
 }
 .projects button {
-    align-self: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
     width: 100px;
     height: 30px;
+}
+
+.contact{
+    box-sizing: border-box;
+    text-align: center;
+    background-image: linear-gradient(60deg, #3a3d40 0%, #181719 100%);
+    min-height: 100%;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact h2{
+    font-size: 4rem;
+}
+.contact p{
+    margin-top: 1.5em;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+}
+.contact span{
+    font-size: 2rem;
+    margin: 1em 2em;
+}
+
+footer{
+    padding: 5px;
+    background-image: linear-gradient(60deg, #3a3d40 0%, #181719 100%);
+    border-top:2px solid #be3144;
+    text-align: center;
+    height: 50px;
 }
