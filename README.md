@@ -1,6 +1,6 @@
 # MyPorforlio
 
-preview:https://juejin.im/post/6844904050543034376#heading-27
+preview:https://guzhaoyu123.github.io/MyPorforlio/
 
 Feature :
 1.CSS GRID
